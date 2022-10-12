@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #2196F3;
+    background-color: rgba(8, 10, 148, 0.83);
 }
 
 .container {
@@ -16,12 +16,19 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 600px;
-    height: 50px;
+    height: 70px;
     margin-bottom: 100px;
     background: white;
     border-radius: 5px
@@ -31,24 +38,28 @@ h1 {
     border: none;
     outline: none;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 24px;
     width: 490px;
     background: white;
     min-height: 100%;
-    margin-left: 5px;
+    padding: 0 10px;
 }
 
 .task__add-button {
     width: 90px;
-    height: 40px;
+    height: 70%;
     padding: 10px;
-    background: #2196F3;
+    background: rgba(39, 41, 183, 0.83);
     color: white;
     font-size: 17px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.task__add-button:hover {
+    background: rgba(34, 36, 148, 0.61);
 }
 
 .todo-list {
@@ -56,7 +67,6 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
 }
 
 .todo-list__block {
@@ -66,15 +76,18 @@ h1 {
     background: none;
     width: 100%;
     overflow-wrap: break-word;
+    border-bottom: 1px solid grey;
+    padding: 10px 5px;
 }
 
 .todo-list__text {
     min-height: 50px;
-    width: 500px;
-    font-size: 20px;
-    font-size: 1.5;
+    width: 450px;
+    font-size: 24px;
     overflow-wrap: break-word;
     outline: 0px solid transparent;
+    padding: 0 10px;
+    line-height: 2;
 }
 
 .button-block {
@@ -94,8 +107,8 @@ h1 {
 
 .check-button,
 .delete-button {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border: none;
     background: none
 }
@@ -104,5 +117,8 @@ h1 {
 .delete-button i {
     font-size: 20px;
     padding: 0;
-    color: #2196F3
+}
+
+.delete-button i {
+    color: red;
 }
