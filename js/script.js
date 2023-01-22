@@ -35,6 +35,9 @@ function createTask(event) {
             toDoBlock.style.textDecoration = 'line-through';
             checkButton.style.color = 'green';
         });
+        deleteButton.addEventListener('click', () => {
+            toDoBlock.remove()
+        })
     } else {
         alert('Please fill your task!')
     }
